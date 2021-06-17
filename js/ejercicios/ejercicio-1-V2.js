@@ -159,6 +159,6 @@ const repetirTexto = (texto = prompt("==> Ejercicio 4 : Ingresa texto que desea 
 
 
 
-// ============================== DESCOMENTA LA FUNCIÓN "contarCaracteres();" ==============================
+// ============================== DESCOMENTA LA FUNCIÓN "repetirTexto();" ==============================
 // repetirTexto();
-// ============================== DESCOMENTA LA FUNCIÓN "contarCaracteres();" ==============================
+// ============================== DESCOMENTA LA FUNCIÓN "repetirTexto();" ==============================
