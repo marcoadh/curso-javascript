@@ -11,14 +11,15 @@
         Application programming interface
         Interfaz de programación de aplicación.
     -->
-    <h1>Web APIs</h1>
+    <h1 class="titulo1">Web APIs</h1>
 
     <h3>DOM: Document Object Model</h3>
     <h3>BOM: Browser Object Model</h3>
     <h3>CSSOM: CSS Object Model</h3>
     <h3>WEB APIs</h3>
 
-    <ul>
+    <!-- <div name="nombre"></div> -->
+    <ul id="menu">
         <li>Eventos</li>
         <li>Forms</li>
         <li>AJAX - Fetch</li>
@@ -29,12 +30,6 @@
     </ul>
 
 
-    <script>
-        let texto = "Hola mundo, soy marco de la cruz";
-
-        const hablar = (texto) => speechSynthesis.speak(new SpeechSynthesisUtterance(texto));
-
-        hablar(texto);
-    </script>
+    <script src="./js/dom/dom.js"></script>
 </body>
 </html>
