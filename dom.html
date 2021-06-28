@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB API</title>
+</head>
+<body>
+    <!-- API
+        Application programming interface
+        Interfaz de programación de aplicación.
+    -->
+    <h1>Web APIs</h1>
+
+    <h3>DOM: Document Object Model</h3>
+    <h3>BOM: Browser Object Model</h3>
+    <h3>CSSOM: CSS Object Model</h3>
+    <h3>WEB APIs</h3>
+
+    <ul>
+        <li>Eventos</li>
+        <li>Forms</li>
+        <li>AJAX - Fetch</li>
+        <li>History</li>
+        <li>Web Storage</li>
+        <li>Geolocation</li>
+        <li>Etc..</li>
+    </ul>
+
+
+    <script>
+        let texto = "Hola mundo, soy marco de la cruz";
+
+        const hablar = (texto) => speechSynthesis.speak(new SpeechSynthesisUtterance(texto));
+
+        hablar(texto);
+    </script>
+</body>
+</html>
