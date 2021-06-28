@@ -1,0 +1,11 @@
+{
+    "cadena" : "Marco",
+    "numero" : 24,
+    "booleano" : true,
+    "arreglo" : ["estudiar", "programar", "salir a caminar"],
+    "objeto" : {
+        "instagram" : "@marco",
+        "correo" : "marco@gmail.com"
+    },
+    "nulo" : null
+}
