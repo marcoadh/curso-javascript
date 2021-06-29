@@ -2,8 +2,16 @@
     --color-dark: #222;
     --color-yellow: #F7DF1E;
 }
-/* 
-.dom-link {
-    background-color: #F7DF1E;
-    color: #222;
-} */
+
+body {
+    background-color: var(--color-dark);
+    color: var(--color-yellow);
+}
+
+.rotate-45 {
+    transform: rotate(45deg);
+}
+
+.rotate-135 {
+    transform: rotate(135deg);
+}
