@@ -15,3 +15,9 @@ body {
 .rotate-135 {
     transform: rotate(135deg);
 }
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid white;
+}
