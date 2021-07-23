@@ -1,26 +1,54 @@
-
-function cuadradoCallback (value, callback) {
-    setTimeout(() => {
-        callback(value, value * value);
-    }, 0 | Math.random() * 1000)
+//Función de Tipo CallBack
+function imprimir(mensaje){
+    console.log(mensaje);
 }
 
-cuadradoCallback(0, (value, resultado) => {
+function sumar(x, y, functionCallback){
+    let resultado = x + y;
+    functionCallback(`Resultado: ${resultado}`);
+}
+
+sumar(10, 25, imprimir);
+
+
+console.log(" ");
+console.log(" ");
+
+
+function cuadradoCallback (value, callback) {
+    setTimeout(() => callback(value, value * value) , 1000);
+}
+
+cuadradoCallback(1, (value, resultado) => {
     console.log("Iniciando Callback");
     console.log(`Callback: ${value}, ${resultado}`);
-    cuadradoCallback(1, (value, resultado) => {
+    cuadradoCallback(10, (value, resultado) => {
         console.log(`Callback: ${value}, ${resultado}`);
-        cuadradoCallback(2, (value, resultado) => {
+        cuadradoCallback(20, (value, resultado) => {
             console.log(`Callback: ${value}, ${resultado}`);
-            cuadradoCallback(3, (value, resultado) => {
+            cuadradoCallback(30, (value, resultado) => {
                 console.log(`Callback: ${value}, ${resultado}`);
-                cuadradoCallback(4, (value, resultado) => {
+                cuadradoCallback(40, (value, resultado) => {
                     console.log(`Callback: ${value}, ${resultado}`);
-                    cuadradoCallback(5, (value, resultado) => {
+                    cuadradoCallback(50, (value, resultado) => {
                         console.log(`Callback: ${value}, ${resultado}`);
+                        cuadradoCallback(60, (value, resultado) => {
+                            console.log(`CallBack: ${value}, ${resultado}`);
+                        });
                     });
                 });
             });
         });
     });
 });
+
+
+// console.log(" ");
+// console.log(" ");
+
+// let reloj = () => {
+//     let fecha = new Date();
+//     console.log(`Hora actual: ${fecha.getHours()}:${fecha.getMinutes()}:${fecha.getSeconds()}`);
+// }
+
+// setInterval(reloj, 1000);
